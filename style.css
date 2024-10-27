@@ -1,0 +1,358 @@
+@media (max-width: 600px) {
+  /* Адаптивні стилі для екранів до 600px */
+  .wrapper {
+    padding: 0 16px; /* Зменшуємо відступи для мобільних пристроїв */
+  }
+
+  .header-wrapper .hero {
+    display: block; /* Вертикальне розташування елементів */
+    height: auto; /* Висота адаптується під вміст */
+    text-align: center; /* Центруємо текст */
+  }
+
+  .hero-right img {
+    max-width: 100%; /* Зображення підлаштовується під екран */
+    margin-top: 16px; /* Відступ зверху для візуального розділення */
+  }
+
+  .footer-container {
+    display: block; /* Футер стає вертикальним */
+    text-align: center; /* Центруємо текст у футері */
+  }
+
+  .social-icons img {
+    margin: 0 5px; /* Відстань між іконками соцмереж */
+  }
+}
+
+/* Загальні стилі для зображень */
+img {
+  max-width: 100%; /* Зображення не виходитиме за межі контейнера */
+  height: auto; /* Зберігає пропорції зображення */
+  display: block; /* Уникнення зайвих проміжків під зображенням */
+}
+
+/* Для карток постів */
+.blogpost-card .thumbnail-image img {
+  width: 100%; /* Ширина зображення дорівнює ширині контейнера */
+  height: 200px; /* Фіксована висота картки */
+  object-fit: cover; /* Обрізає зайве, зберігаючи пропорції */
+  border-radius: 8px; /* Округлені кути зображення */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для глибини */
+}
+
+/* Головне зображення у хедері */
+.hero-right img {
+  width: 100%; /* Підлаштовується під ширину контейнера */
+  max-width: 500px; /* Максимальна ширина */
+  height: auto; /* Пропорційне масштабування зображення */
+  border-radius: 10px; /* Округлені кути */
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.2); /* Глибша тінь */
+}
+
+/* Логотипи та іконки соцмереж */
+.logo-icon img, 
+.footer-left img, 
+.social-icons img {
+  width: 40px; /* Фіксована ширина */
+  height: 40px; /* Фіксована висота */
+  object-fit: contain; /* Масштабування без обрізання */
+  margin-right: 8px; /* Відступ між іконками */
+  border-radius: 50%; /* Округлення для отримання круглої форми */
+  background-color: #fff; /* Білий фон для контрасту */
+  padding: 4px; /* Внутрішній відступ для іконок */
+}
+
+/* Скидання стандартних відступів */
+* {
+  margin: 0; /* Видаляємо зовнішні відступи */
+  padding: 0; /* Видаляємо внутрішні відступи */
+  box-sizing: border-box; /* Включаємо відступи у загальний розмір елемента */
+}
+
+/* Основні стилі сторінки */
+html {
+  font-family: "Arial", "Helvetica", sans-serif; /* Основний шрифт сторінки */
+  background-color: #b8c8e3; /* Блакитний фон */
+}
+
+.wrapper {
+  width: 1152px; /* Ширина сторінки */
+  margin: 0 auto; /* Центрування сторінки */
+  padding: 0 120px; /* Внутрішні відступи з боків */
+}
+
+.wrapper p {
+  line-height: 2; /* Збільшений міжрядковий інтервал для читабельності */
+  margin-bottom: 20px; /* Відступ знизу між абзацами */
+}
+
+/* Верхня навігаційна панель */
+.top-nav {
+  position: fixed; /* Фіксована позиція при скролі */
+  left: 0; /* Прив'язка до лівого краю */
+  right: 0; /* Прив'язка до правого краю */
+  background: #a7c9e8; /* Жовтий фон */
+  padding: 8px 0; /* Відступи зверху і знизу */
+  z-index: 200; /* Пріоритет відображення */
+}
+
+.top-nav .wrapper {
+  display: flex; /* Горизонтальне вирівнювання */
+  justify-content: space-between; /* Простір між елементами */
+  align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.top-nav nav ul {
+  display: flex; /* Список у горизонтальному ряді */
+  list-style: none; /* Видалення маркерів списку */
+}
+
+.top-nav nav ul li a {
+  color: #1f294d; /* Блакитний текст */
+  text-decoration: none; /* Без підкреслення */
+  margin: 0 15px; /* Проміжки між посиланнями */
+  text-transform: uppercase; /* Великі літери */
+  font-size: 14px; /* Розмір тексту */
+}
+
+/* Секція Hero */
+.header-wrapper {
+  max-width: 1152px; /* Максимальна ширина секції */
+  margin: 0 auto; /* Центрування секції */
+  background: #b8c8e3; /* Блакитний фон */
+  height: 100vh; /* Висота на весь екран */
+}
+
+.header-wrapper .hero {
+  display: flex; /* Розташування в ряд */
+}
+
+.header-wrapper .hero .hero-left {
+  align-self: center; /* Центрування по вертикалі */
+  padding-left: 100px; /* Відступ зліва */
+}
+
+.header-wrapper .hero h1.main-heading {
+  color: #1f294d; /* Блакитний колір тексту */
+  font-family: "Arial", "Helvetica", sans-serif; /* Основний шрифт */
+  font-size: 64px; /* Великий розмір заголовка */
+}
+
+.header-wrapper .hero p.main-subheading {
+  color: #1f294d; /* Жовтий колір підзаголовка */
+  font-size: 18px; /* Розмір підзаголовка */
+  margin-bottom: 24px; /* Відступ знизу */
+}
+
+/* Стилі для кнопок */
+a.btn {
+  background:#a7c9e8; /* Лимонно-жовтий фон */
+  color: #1f294d; /* Блакитний текст */
+  text-decoration: none; /* Без підкреслення */
+  padding: 8px 24px; /* Внутрішні відступи */
+  display: inline-block; /* Відображення як блоку */
+  font-size: 16px; /* Розмір тексту кнопки */
+}
+
+/* Заголовки для секцій */
+h2 {
+  font-size: 24px; /* Розмір заголовка */
+  text-transform: uppercase; /* Використання великих літер */
+  margin-bottom: 36px; /* Відступ знизу */
+  color: #1f294d; /* Блакитний колір */
+  position: relative; /* Позиціонування для лінії під заголовком */
+}
+
+h2::after {
+  content: ""; /* Порожній контент для лінії */
+  position: absolute; /* Абсолютне позиціонування */
+  height: 3px; /* Товщина лінії */
+  width: 48px; /* Довжина лінії */
+  background: #1f294d; /* Блакитний колір лінії */
+  bottom: -8px; /* Відступ знизу */
+  left: 0; /* Лінія починається з лівого краю */
+}
+
+//* Секція меню */
+.posts-wrapper {
+  display: grid; /* Використання CSS Grid для розташування карток */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивна ширина карток */
+  gap: 24px; /* Відстань між картками */
+  margin: 50px 0; /* Відступи зверху та знизу */
+}
+
+/* Картка страви */
+.blogpost-card {
+  background: #ffffff; /* Білий фон картки */
+  border-radius: 12px; /* Округлені кути */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для глибини */
+  padding: 20px; /* Внутрішні відступи */
+  transition: transform 0.3s, box-shadow 0.3s; /* Анімація при наведенні */
+}
+
+.blogpost-card:hover {
+  transform: translateY(-5px); /* Підняття картки при наведенні */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Збільшення тіні при наведенні */
+}
+
+/* Зображення в картці */
+.thumbnail-image img {
+  width: 100%; /* Ширина зображення дорівнює ширині контейнера */
+  height: 250px; /* Фіксована висота зображення */
+  object-fit: cover; /* Обрізка зображення з збереженням пропорцій */
+  border-radius: 8px; /* Округлені кути зображення */
+}
+
+/* Заголовок страви */
+.blogpost-card h3 {
+  font-size: 28px; /* Розмір заголовка */
+  margin: 12px 0; /* Відступи зверху та знизу */
+  color: #53a5cf; /* Блакитний колір заголовка */
+}
+
+/* Текст опису та ціна */
+.blogpost-card p {
+  font-size: 16px; /* Розмір тексту опису */
+  line-height: 1.5; /* Міжрядковий інтервал для читабельності */
+  color: #a7c9e8; /* Жовтий колір тексту */
+}
+
+.price {
+  display: block; /* Відображення ціни як блоку */
+  margin: 8px 0; /* Відступи зверху та знизу */
+  font-size: 18px; /* Розмір тексту ціни */
+  font-weight: bold; /* Жирний шрифт */
+  color: #1f294d; /* Блакитний колір для ціни */
+}
+
+/* Кнопка "Детальніше" */
+.blogpost-card a.read-more {
+  display: inline-block; /* Відображення кнопки як блоку */
+  margin-top: 12px; /* Відступ зверху */
+  padding: 10px 20px; /* Внутрішні відступи кнопки */
+  background: #a7c9e8; /* Жовтий фон кнопки */
+  color:#1f294d; /* Блакитний текст кнопки */
+  text-decoration: none; /* Без підкреслення */
+  border-radius: 8px; /* Округлені кути кнопки */
+  font-weight: bold; /* Жирний шрифт */
+  transition: background 0.3s; /* Анімація фону при наведенні */
+}
+
+.blogpost-card a.read-more:hover {
+  background: #6e8aba; /* Зміна фону кнопки при наведенні */
+}
+
+/* Cards Section */
+.blogpost-card {
+  padding: 50px 0; /* Внутрішні відступи для карток */
+  border-bottom: 1px solid #005bbb; /* Нижня межа картки */
+}
+
+/* Заголовок карток */
+.blogpost-card h3 {
+  font-family: "Arial", "Helvetica", sans-serif; /* Основний шрифт заголовка */
+  font-size: 36px; /* Розмір заголовка */
+  color: #1f294d; /* Колір заголовка */
+  margin-bottom: 12px; /* Відступ знизу */
+}
+
+/* Contact Us Section */
+.contact-container {
+  margin-top: 100px; /* Відступ зверху */
+  background: #f7ede2; /* Світло-кремовий фон */
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.1); /* Тінь для глибини */
+  padding: 32px; /* Внутрішні відступи */
+}
+
+.contact-container form input[type="text"],
+.contact-container form textarea {
+  padding: 8px 24px; /* Внутрішні відступи для полів вводу */
+  margin-bottom: 10px; /* Відступ знизу */
+  border: 1px solid #b8c8e3; /* Синя межа полів вводу */
+}
+
+.contact-container form input[type="submit"] {
+  background: #a7c9e8; /* Яскраво-жовтий фон кнопки */
+  color: #1f294d; /* Блакитний текст кнопки */
+  border: none; /* Без межі */
+  width: 150px; /* Фіксована ширина кнопки */
+  padding: 8px 24px; /* Внутрішні відступи кнопки */
+  font-weight: bold; /* Жирний шрифт для кнопки */
+}
+
+/* Footer */
+footer {
+  background:#a7c9e8; /* Жовтий фон футера */
+  color: #1f294d; /* Блакитний текст */
+  padding: 36px; /* Внутрішні відступи футера */
+  margin-top: 100px; /* Відступ зверху */
+  text-align: center; /* Центрування тексту */
+}
+
+footer a {
+  color:#1f294d; /* Блакитний колір для посилань */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+.footer-container {
+  display: flex; /* Горизонтальне вирівнювання контейнера футера */
+  justify-content: space-between; /* Простір між елементами */
+  flex-wrap: wrap; /* Перенесення елементів на новий ряд при необхідності */
+}
+
+.footer-container .social-icons img {
+  margin: 0 10px; /* Відстань між іконками */
+  width: 24px; /* Фіксована ширина іконок */
+  height: 24px; /* Фіксована висота іконок */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+  /* Адаптивні стилі для екранів до 600px */
+  .wrapper {
+    padding: 0 16px; /* Зменшуємо відступи для мобільних пристроїв */
+  }
+
+  .header-wrapper .hero {
+    display: block; /* Вертикальне розташування елементів у хедері */
+    height: 100vh; /* Висота на весь екран */
+  }
+
+  .header-wrapper h1.main-heading {
+    font-size: 48px; /* Зменшення розміру заголовка для мобільних пристроїв */
+  }
+
+  .contact-container {
+    padding: 16px; /* Зменшені внутрішні відступи */
+  }
+
+  footer {
+    text-align: center; /* Центрування тексту у футері */
+  }
+}
+/* Стиль для посилань у головній навігації */
+.main-nav ul li a {
+  text-decoration: none;
+  color: black; /* Початковий колір */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 10px 20px;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px;
+}
+
+/* Ефект при наведенні (hover) */
+.main-nav ul li a:hover {
+  color: white; /* Змінюємо колір тексту */
+  background-color: #007bff; /* Змінюємо колір фону */
+}
+
+/* Ефект при натисканні (active) */
+.main-nav ul li a:active {
+  background-color: #0056b3; /* Темніший колір при натисканні */
+}
+
